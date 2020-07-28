@@ -1,12 +1,17 @@
 #include "stdafx.h"
+#include "Game.h"
 
 int main()
 {
-	srand(time(static_cast<unsigned>(0)));
+	srand(time(NULL));
 
-	std::cout << "Hello game 4!" << "\n";
+	Game game;
 
-	system("PAUSE");
+	while (game.getWindow().isOpen())
+	{
+		game.update();
+		game.render();
+	}
 
 	//End of application
 	return 0;
