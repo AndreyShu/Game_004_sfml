@@ -8,7 +8,7 @@ void Game::initWindow()
 		"Game 4", 
 		sf::Style::Close | sf::Style::Titlebar);
 
-	this->window.setFramerateLimit(144);
+	this->window.setFramerateLimit(60);
 }
 
 void Game::initPlayer()
