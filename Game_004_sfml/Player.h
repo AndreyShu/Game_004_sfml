@@ -10,6 +10,7 @@ private:
 	void initSprite();
 
 	//Animation
+	sf::IntRect currentFrame;
 
 	//Movement
 
@@ -21,6 +22,7 @@ public:
 	virtual ~Player();
 
 	//Functions
+	void updateMovement();
 	void update();
 	void render(sf::RenderTarget& target);
 
